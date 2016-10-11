@@ -84,7 +84,7 @@ Building
 2. From that shell, start an MSYS shell : run msys2_shell.bat (from where you installed msys, typically c:\msys64\msys2_shell.bat)
 3. configure ffmpeg/libavcodec:
 ./configure --toolchain=msvc --optflags='-Zi -Og -Oy- ' --arch=x86 --enable-sdl --enable-yasm --enable-asm --enable-shared --disable-static --enable-debug --disable-optimizations --disable-everything --disable-dxva2 --disable-doc --disable-htmlpages --disable-manpages --disable-podpages --disable-txtpages --disable-network --enable-ffprobe --enable-ffplay --enable-protocol=file --enable-filter=scale --enable-demuxer=m4v,mov,mp3 --enable-filter=aresample --enable-decoder=aac_mf_audio,mp3_mf_audio,h264_mf_video --prefix=/c/Users/xxx/Temp/ffmpeg --sdl-dir=c:/Users/xxx/Develop/SDL-1.2.15
-(change the install prefix to the location where you want to put the built binaries, and the sdl_dir value to where you downloaded the SDL SDK)
+(Note: change the install prefix to the location where you want to put the built binaries, and the sdl_dir value to where you downloaded the SDL SDK)
 4. build and install
 'make V=1 install'
 This will build and install the libs and binaries to the location you have chosen in the configure step.
